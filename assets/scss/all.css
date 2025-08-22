@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/*引入字體*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
+
+@import "reset.css";
+@import "variables.css";
+@import "base.css";
+@import "utils.scss";
+@import "button.scss";
+
+
+
+.product {
+  position: relative;
+}
+.product .product-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 8px 12px;
+  background-color: var(--primary-100);
+  font-size: 14px;
+  color: var(--primary-400);
+}
+
+@media (max-width: 767px) {
+  .product-md-row {
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+  .product-md-col {
+    min-width: 316px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+.category .active {
+  color: var(--primary-400);
+}
+
+.page-item .btn {
+  padding: 8px 15px;
+  border-radius: 0;
+  font-weight: 400;
+}
+
+.page-item .active {
+  background-color: var(--primary-300);
+  font-weight: 500;
+}/*# sourceMappingURL=all.css.map */
